@@ -1,0 +1,397 @@
+/* Navbar Styling - Western Restaurant Theme */
+.navbar {
+  background-color: #e31837; /* Pizza Hut/Domino's red */
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar li {
+  margin: 0;
+}
+
+.navbar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 18px 25px;
+  font-size: 1em;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.navbar a:hover {
+  background-color: #c41230; /* darker red */
+  transform: translateY(-2px);
+}
+
+.navbar a.active {
+  background-color: #006491; /* Domino's blue accent */
+  font-weight: bold;
+}
+
+/* Responsive navbar for smaller screens */
+@media screen and (max-width: 600px) {
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .navbar a {
+    text-align: center;
+    padding: 14px 20px;
+    width: 100%;
+  }
+}
+
+/* Top Bar with Logo and Menu Button */
+.top-bar {
+  background: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8em;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(255, 107, 53, 0.3);
+}
+
+.company-name {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #2c2c2c;
+}
+
+.company-name span {
+  color: #ff6b35;
+}
+
+.menu-button {
+  background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
+  color: white;
+  padding: 14px 35px;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+  border: none;
+  cursor: pointer;
+}
+
+.menu-button:hover {
+  background: linear-gradient(135deg, #ff8c42 0%, #ffa057 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 107, 53, 0.4);
+}
+
+/* Confirmation Page Styles */
+body {
+  font-family: "Arial Black", Arial, sans-serif;
+  background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 650px;
+  margin: 50px auto;
+  padding: 50px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  border-top: 5px solid #28a745;
+}
+
+.container h2 {
+  color: #28a745;
+  margin-bottom: 25px;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.success-icon {
+  font-size: 5em;
+  color: #28a745;
+  margin-bottom: 25px;
+  animation: scaleIn 0.5s ease-in-out;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.container p {
+  font-size: 1.3em;
+  margin: 20px 0;
+  color: #555;
+}
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #e31837 0%, #c41230 100%);
+  color: white;
+  padding: 15px 40px;
+  text-decoration: none;
+  border-radius: 30px;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(227, 24, 55, 0.3);
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #006491 0%, #004d73 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 100, 145, 0.4);
+}
+
+/* Revenue Page Styles */
+.revenue-main-container {
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+  background: #fafafa;
+}
+
+.orders-section {
+  flex: 2;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.orders-section h2 {
+  color: #ff6b35;
+  font-size: 2em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.orders-section .subtitle {
+  color: #666;
+  margin-bottom: 25px;
+  font-size: 1em;
+}
+
+.orders-table-container {
+  overflow-x: auto;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.orders-table thead {
+  background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.orders-table th {
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+}
+
+.orders-table td {
+  padding: 15px;
+  border-bottom: 1px solid #f0f0f0;
+  color: #333;
+}
+
+.orders-table tbody tr {
+  transition: background 0.2s ease;
+}
+
+.orders-table tbody tr:hover {
+  background: #fff8f5;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-paid {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status-pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+/* Summary Sidebar */
+.summary-sidebar {
+  flex: 1;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+}
+
+.summary-sidebar h3 {
+  color: #2c2c2c;
+  font-size: 1.5em;
+  margin-bottom: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.summary-card {
+  background: linear-gradient(135deg, #fff5f0 0%, #ffe8dc 100%);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-left: 4px solid #ff6b35;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.summary-card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.2);
+}
+
+.summary-card.total-revenue {
+  background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
+  color: white;
+  border-left: 4px solid #fff;
+}
+
+.summary-card.total-revenue .summary-label,
+.summary-card.total-revenue .summary-value {
+  color: white;
+}
+
+.summary-icon {
+  font-size: 2.5em;
+  line-height: 1;
+}
+
+.summary-info {
+  flex: 1;
+}
+
+.summary-label {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.summary-value {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #ff6b35;
+}
+
+.summary-actions {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 2px solid #f0f0f0;
+}
+
+.action-btn {
+  display: block;
+  background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+}
+
+.action-btn:hover {
+  background: linear-gradient(135deg, #ff8c42 0%, #ffa057 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 107, 53, 0.4);
+}
+
+/* Responsive Design for Revenue Page */
+@media screen and (max-width: 1024px) {
+  .revenue-main-container {
+    flex-direction: column;
+  }
+
+  .summary-sidebar {
+    position: static;
+  }
+
+  .orders-table-container {
+    max-height: 400px;
+  }
+}
